@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    font-family: 'Spartan', sans-serif;
+}
+
+.hero {
+    padding: 5% 10%;
+    background: url(../images/homepage/hero-bg-desktop.jpg) no-repeat;
+    min-height: 50rem;
+}
+
+.hero div {
+    padding-right: 50%;
+}
+
+.hero img {
+    margin-bottom: 3.75rem;
+}
+
+.hero h1 {
+    color: var(--clr-white);
+    font-weight: 200;
+    font-size: 4rem;
+    margin-bottom: 2.5rem;
+}
+
+.hero p {
+    color: var(--clr-white);
+    margin-bottom: 1.875rem;
+}
+
+.hero button,
+.cta button {
+    font: 600 1rem 'Spartan', sans-serif;
+    padding: 0.9375rem 1.875rem;
+    color: var(--clr-white);
+    text-transform: uppercase;
+    border: 1px solid var(--clr-white);
+    transition: 0.3s;
+}
+
+.hero button:hover,
+.cta button:hover {
+    background: var(--clr-white);
+    color: var(--clr-cod-grey);
+    cursor: pointer;
+}
+
+.benefits {
+    padding: 0 10%;
+    display: flex;
+    flex-direction: column;
+}
+
+.benefits article {
+    display: flex;
+    align-items: center;
+    gap: 4.375rem;
+}
+
+.benefits h2 {
+    margin: 1.25rem 0;
+    font-size: 2.5rem;
+}
+
+.benefits p,
+.features p {
+    font-size: 1.125rem;
+}
+
+.enjoyable-section {
+    position: relative;
+    top: -1.25rem;
+}
+
+.locally-section {
+    flex-direction: row-reverse;
+    position: relative;
+    bottom: -1.25rem;
+}
+
+.benefits {
+    background: url(../images/patterns/pattern-lines.svg) right 70% no-repeat;
+}
+
+.menu {
+    padding: 5% 10%;
+    background: var(--clr-cod-grey);
+    display: flex;
+    align-items: center;
+    color: var(--clr-white);
+    gap: 6.25rem;
+}
+
+.menu-intro {
+    display: flex;
+    flex-direction: column;
+    gap: 1.875rem;
+}
+
+.menu-intro h1 {
+    font-size: 2.5rem;
+}
+
+.menu-foods {
+    display: flex;
+    flex-direction: column;
+    gap: 1.875rem;
+}
+
+.menu-foods > div {
+    display: flex;
+    gap: 1.875rem;
+    align-items: center;
+}
+
+.menu-foods h3 {
+    font-size: 1.125rem;
+    margin-bottom: 0.625rem;
+}
+
+.features {
+    padding: 5% 10%;
+    display: flex;
+    gap: 3.125rem;
+    background: url(../images/patterns/pattern-lines.svg) left 10% no-repeat;
+    background-size: 30%;
+}
+
+.features input {
+    display: none;
+}
+
+.features h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.25rem;
+}
+
+.features button {
+    background: var(--clr-mirage);
+    padding: 0.9375rem 2.5rem;
+    font: 600 1rem 'Spartan', sans-serif;
+    text-transform: uppercase;
+    color: var(--clr-white);
+    letter-spacing: 3px;
+    transition: 0.3s;
+    margin: 2.5rem 0;
+}
+
+.features button:hover {
+    background: var(--clr-white);
+    border: 1px solid var(--clr-cod-grey);
+    color: var(--clr-cod-grey);
+    cursor: pointer;
+}
+
+.features form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.features .label {
+    color: var(--clr-grey);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.125rem;
+    position: relative;
+    transition: 0.3s;
+}
+
+.features div:first-child .label {
+    color: var(--clr-mirage)
+}
+
+.features .label:hover {
+    color: var(--clr-mirage);
+    cursor: pointer;
+}
+
+.cta {
+    display: flex;
+    padding: 5% 10%;
+    align-items: center;
+    justify-content: space-between;
+    background: url(../images/homepage/ready-bg-desktop.jpg);
+}
+
+.cta h1 {
+    font: 700 2rem 'Spartan', sans-serif;
+    color: var(--clr-white);
+}
+
+.footer {
+    padding: 3% 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--clr-white);
+    background: var(--clr-cod-grey);
+}
+
+.footer div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem;
+}
+
+.booking {
+    background: url(../images/booking/hero-bg-desktop.jpg) no-repeat;
+    margin-bottom: 18.75rem;
+    padding: 5% 10%;
+    position: relative;
+}
+
+.booking > img,
+.thanks img {
+    margin-bottom: 4.375rem;
+}
+
+.booking-intro {
+    display: flex;
+    gap: 3.125rem;
+}
+
+.booking-intro h1,
+.thanks h1 {
+    color: var(--clr-white);
+    font-size: 3rem;
+    font-weight: 300;
+    margin-bottom: 1.875rem;
+}
+
+.booking-intro > div:first-child p,
+.thanks p {
+    color: var(--clr-white);
+    padding-right: 30%;
+    font-size: 1.125rem;
+}
+
+.booking form {
+    background: var(--clr-white);
+    padding: 2.5rem;
+    width: 100%;
+    box-shadow: 0px 9px 5px 0px rgba(0,0,0,0.75);
+}
+
+#name,
+#email,
+#day,
+#mon,
+#year,
+#hour,
+#minute {
+    border-bottom: 1px solid var(--clr-grey);
+    width: 100%;
+    font: 500 1rem 'Spartan', sans-serif;
+    margin-bottom: 0.625rem;
+}
+
+#day,
+#mon,
+#year {
+    width: 20%;
+}
+
+.error {
+    margin-bottom: 1.25rem;
+    color: rgb(187, 16, 16);
+}
+
+.time,
+.date {
+    display: flex;
+    gap: 0.625rem;
+}
+
+#minute {
+    width: 30%;
+}
+
+#hour {
+    width: 100%;
+}
+
+.sliders {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--clr-cod-grey);
+    margin-bottom: 1.875rem;
+}
+
+.submit {
+    width: 100%;
+    border: 2px solid var(--clr-cod-grey);
+    font-family: 'Spartan', sans-serif;
+    font-size: 1.125rem;
+    padding: 0.9375rem;
+    transition: 0.3s;
+}
+
+.submit:hover {
+    background: var(--clr-mirage);
+    color: var(--clr-white);
+    cursor: pointer;
+}
+
+.sliders button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.booking-intro > img:last-child {
+    position: absolute;
+    bottom: 0;
+    right: 35%;
+    z-index: -1;
+}
+
+.main-site,
+.booking,
+.thanks {
+    display: none;
+    position: absolute;
+    z-index: 0;
+    opacity: 0;
+    top: -100%;
+}
+
+.selecionado {
+    position: relative;
+    display: block;
+    z-index: 1;
+    opacity: 1;
+    top: 0;
+}
+
+.family-img,
+.events-img,
+.social-img {
+    display: none;
+    position: absolute;
+    z-index: 0;
+    opacity: 0;
+    top: -100%;
+    transition: 0.3s;
+}
+
+.selecionada {
+    position: relative;
+    display: block;
+    z-index: 1;
+    opacity: 1;
+    top: 0;
+}
+
+.thanks {
+    background: url(../images/booking/hero-bg-desktop.jpg) no-repeat;
+    background-size: cover;
+    padding: 5% 10%;
+    height: 80vh;
+}
+

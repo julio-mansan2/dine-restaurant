@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Dine Restaurant - Frontend Mentor</title>
+    <link rel="shortcut icon" href="./src/images/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/variables.css">
+    <link rel="stylesheet" href="./src/css/responsive.css">
+</head>
+
+<body>
+    <main>
+        <section class="main-site selecionado">
+            <section class="hero">
+                <div>
+                    <img src="./src/images/logo.svg" alt="Dine Logo">
+                    <h1>Exquisite dining <br> since 1989</h1>
+                    <p>Experience our seasonal menu in beautiful country surroundings. Eat the freshest produce from the
+                        comfort of our farmhouse.</p>
+                    <button class="book-btn">Book a table</button>
+                </div>
+            </section>
+            <section class="benefits">
+                <article class="enjoyable-section">
+                    <picture>
+                        <source media="(min-width: 1100px)" srcset="./src/images/homepage/enjoyable-place-desktop.jpg">
+                        <source media="(min-width: 500px)" srcset="./src/images/homepage/enjoyable-place-tablet.jpg">
+                        <img src="./src/images/homepage/enjoyable-place-mobile.jpg" alt="enjoyable place">
+                    </picture>
+                    <div>
+                        <img src="./src/images/patterns/pattern-divide.svg" aria-hidden="true">
+                        <h2>Enjoyable place for all the family</h2>
+                        <p>Our relaxed surroundings make dining with us a great experience for everyone. We can even
+                            arrange a tour of the farm before your meal. </p>
+                    </div>
+                </article>
+                <article class="locally-section">
+                    <picture>
+                        <source media="(min-width: 1100px)" srcset="./src/images/homepage/locally-sourced-desktop.jpg">
+                        <source media="(min-width: 500px)" srcset="./src/images/homepage/locally-sourced-tablet.jpg">
+                        <img src="./src/images/homepage/locally-sourced-mobile.jpg" alt="locally sourced">
+                    </picture>
+                    <div>
+                        <img src="./src/images/patterns/pattern-divide.svg" aria-hidden="true">
+                        <h2>The most locally sourced food</h2>
+                        <p>All our ingredients come directly from our farm or local fishery. So you can be sure that
+                            you’re eating the freshest, most sustainable food.</p>
+                    </div>
+                </article>
+            </section>
+            <section class="menu">
+                <article class="menu-intro">
+                    <h1>A few highlights from our menu</h1>
+                    <p>We cater for all dietary requirements, but here’s a glimpse at some of our diner’s favourites.
+                        Our menu is revamped every season.</p>
+                </article>
+                <article class="menu-foods">
+                    <div>
+                        <picture>
+                            <source media="(min-width: 500px)" srcset="./src/images/homepage/salmon-desktop-tablet.jpg">
+                            <img src="./src/images/homepage/salmon-mobile.jpg" alt="Salmon">
+                        </picture>
+                        <div>
+                            <h3>Seared Salmon Fillet</h3>
+                            <p>Our locally sourced salmon served with a refreshing buckwheat summer salad.</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div>
+                        <picture>
+                            <source media="(min-width: 500px)" srcset="./src/images/homepage/beef-desktop-tablet.jpg">
+                            <img src="./src/images/homepage/beef-mobile.jpg" alt="Beef">
+                        </picture>
+                        <div>
+                            <h3>Rosemary Filet Mignon</h3>
+                            <p>Our prime beef served to your taste with a delicious choice of seasonal sides.</p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div>
+                        <picture>
+                            <source media="(min-width: 500px)"
+                                srcset="./src/images/homepage/chocolate-desktop-tablet.jpg">
+                            <img src="./src/images/homepage/chocolate-mobile.jpg" alt="Chocolate">
+                        </picture>
+                        <div>
+                            <h3>Summer Fruit Chocolate Mousse</h3>
+                            <p>Creamy mousse combined with summer fruits and dark chocolate shavings.</p>
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <section class="features">
+                <article>
+                    <picture class="family-img selecionada">
+                        <source media="(min-width: 1100px)" srcset="./src/images/homepage/family-gathering-desktop.jpg">
+                        <source media="(min-width: 500px)" srcset="./src/images/homepage/family-gathering-tablet.jpg">
+                        <img src="./src/images/homepage/family-gathering-mobile.jpg" alt="Family Gathering">
+                    </picture>
+                    <picture class="events-img">
+                        <source media="(min-width: 1100px)" srcset="./src/images/homepage/special-events-desktop.jpg">
+                        <source media="(min-width: 500px)" srcset="./src/images/homepage/special-events-tablet.jpg">
+                        <img src="./src/images/homepage/special-events-mobile.jpg" alt="Special Events">
+                    </picture>
+                    <picture class="social-img">
+                        <source media="(min-width: 1100px)" srcset="./src/images/homepage/social-events-desktop.jpg">
+                        <source media="(min-width: 500px)" srcset="./src/images/homepage/social-events-tablet.jpg">
+                        <img src="./src/images/homepage/social-events-mobile.jpg" alt="Social Events">
+                    </picture>
+                </article>
+                <article>
+                    <div class="description">
+                        <h2>Family Gathering</h2>
+                        <p>We love catering for entire families. So please bring everyone along for a special meal with
+                            your loved ones. We’ll provide a memorable experience for all.</p>
+                    </div>
+                    <button class="book-btn">Book a table</button>
+                    <form>
+                        <div>
+                            <label for="family-gathering" class="label">Family Gathering</label>
+                            <input type="radio" checked name="option[365]" id="family-gathering">
+                        </div>
+                        <div>
+                            <label for="special-events" class="label">Special Events</label>
+                            <input type="radio" name="option[365]" id="special-events">
+                        </div>
+                        <div>
+                            <label for="social-events" class="label">Social Events</label>
+                            <input type="radio" name="option[365]" id="social-events">
+                        </div>
+                    </form>
+                </article>
+            </section>
+            <section class="cta">
+                <h1>Ready to make a reservation?</h1>
+                <button class="book-btn">Book a table</button>
+            </section>
+        </section>
+        <section class="booking">
+            <img src="./src/images/logo.svg" alt="Dine Logo">
+            <article class="booking-intro">
+                <div>
+                    <h1>Reservations</h1>
+                    <p>We can’t wait to host you. If you have any special requirements please feel free to call on the
+                        phone number below. We’ll be happy to accommodate you.</p>
+                </div>
+                <form>
+                    <div>
+                        <input type="text" name="name" id="name" placeholder="Name">
+                        <p class="error"></p>
+                    </div>
+                    <div>
+                        <input type="email" required name="email" id="email" placeholder="Email">
+                        <p class="error"></p>
+                    </div>
+                    <div>
+                        <div class="date">
+                            <p>Pick a date:</p>
+                            <input type="text" placeholder="Day" name="day" maxlength="2" id="day"
+                                oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');">
+                            <input type="text" placeholder="Month" name="month" maxlength="2" id="mon"
+                                oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');">
+                            <input type="text" placeholder="Year" name="year" maxlength="4" id="year"
+                                oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');">
+                        </div>
+                        <p class="error"></p>
+                    </div>
+                    <div>
+                        <div class="time">
+                            <p>Pick a time: </p>
+                            <div class="hour">
+                                <input id="hour" type="number" name="hour" placeholder="Hour" min="9" max="12">
+                            </div>
+                            <input id="minute" inputmode="numeric" type="number" name="minute" placeholder='Min' min="00" max="30"
+                                step='30'>
+                            <select class="ampm">
+                                <option name="am" class="am" value="AM">AM</option>
+                                <option name="pm" class="pm" value="PM">PM</option>
+                            </select>
+                        </div>
+                        <p class="error"></p>
+                    </div>
+                    <div class="sliders">
+                        <button class="minus"><img src="./src/images/icons/icon-minus.svg" alt="minus"></button>
+                        <p><span class="people">4</span> people</p>
+                        <button class="plus"><img src="./src/images/icons/icon-plus.svg" alt="plus"></button>
+                    </div>
+                    <button type="submit" class="submit">Make Reservation</button>
+                </form>
+                <img src="./src/images/patterns/pattern-lines.svg" aria-hidden="true">
+            </article>
+        </section>
+        <section class="thanks">
+            <img src="./src/images/logo.svg" alt="Dine Logo">
+            <article>
+                <h1>Thank you!</h1>
+                <p>We will confirm your reservation as soon as possible. Thank you for dining with us!</p>
+            </article>
+        </section>
+    </main>
+    <footer class="footer">
+        <img src="./src/images/logo.svg" alt="Dine Logo">
+        <div>
+            <p>Marthwaite, Sedbergh</p>
+            <p>Cumbria</p>
+            <p>+00 44 123 4567</p>
+        </div>
+        <div>
+            <p>Open Times</p>
+            <p>Mon - Fri: 09:00 AM - 10:00 PM</p>
+            <p>Sat - Sun: 09:00 AM - 11:30 PM</p>
+        </div>
+    </footer>
+    <script src="./src/js/index.js"></script>
+</body>
+
+</html>

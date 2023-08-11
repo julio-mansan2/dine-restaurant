@@ -1,0 +1,452 @@
+@media (min-width: 900px) and (max-width: 1200px) {
+    .hero {
+        padding: 5%;
+        background-image: url(../images/homepage/hero-bg-desktop@2x.jpg);
+        background-size: cover;
+        min-height: 31.25rem;
+    }
+
+    .benefits {
+        padding: 5%;
+        gap: 3.125rem;
+    }
+
+    .enjoyable-section {
+        top: auto;
+    }
+    
+    .locally-section {
+        bottom: auto;
+    }
+
+    .benefits h2 {
+        margin: 1.25rem 0;
+        font-size: 2rem;
+    }
+    
+    .benefits p,
+    .features p {
+        font-size: 1rem;
+    }
+
+    .menu {
+        padding: 5%;
+        flex-direction: column;
+    }
+
+    .menu-intro {
+        text-align: center;
+    }
+
+    .features {
+        padding: 5%;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .features form {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .booking-intro > div {
+        width: fit-content;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 900px) {
+    .hero {
+        padding: 5%;
+        background-image: url(../images/homepage/hero-bg-tablet@2x.jpg);
+        background-size: cover;
+        min-height: 62.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .hero div {
+        padding-right: 0;
+    }
+
+    .benefits {
+        padding: 5%;
+        gap: 4.375rem;
+    }
+
+    .benefits article {
+        flex-direction: column;
+        gap: 1.875rem;
+    }
+
+    .benefits article > div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .enjoyable-section {
+        top: auto;
+    }
+    
+    .locally-section {
+        bottom: auto;
+    }
+
+    .benefits h2 {
+        font-size: 2rem;
+    }
+    
+    .benefits p,
+    .features p {
+        font-size: 1rem;
+    }
+
+    .menu {
+        padding: 5%;
+        flex-direction: column;
+    }
+
+    .menu-intro {
+        text-align: center;
+    }
+
+    .features {
+        padding: 5%;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .features form {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .booking-intro > div {
+        width: fit-content;
+    }
+
+    .booking-intro {
+        flex-direction: column;
+    }
+
+    .booking-intro > div:first-child p {
+        padding-right: 0;
+    }
+
+    .footer {
+        flex-direction: column;
+        text-align: center;
+        gap: 3.125rem;
+    }
+}
+
+@media (min-width: 350px) and (max-width: 500px) {
+    .hero {
+        padding: 5%;
+        background-image: url(../images/homepage/hero-bg-mobile.jpg);
+        background-size: cover;
+        min-height: 62.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero div {
+        padding-right: 0;
+
+    }
+
+    .benefits {
+        padding: 5%;
+        gap: 4.375rem;
+    }
+
+    .benefits article {
+        flex-direction: column;
+        gap: 1.875rem;
+    }
+
+    .benefits article > div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .enjoyable-section {
+        top: auto;
+    }
+    
+    .locally-section {
+        bottom: auto;
+    }
+
+    .benefits h2 {
+        font-size: 2rem;
+    }
+    
+    .benefits p,
+    .features p {
+        font-size: 1rem;
+    }
+
+    .menu {
+        padding: 10% 5%;
+        flex-direction: column;
+        gap: 3.125rem;
+    }
+
+    .menu h1 {
+        font-size: 2rem;
+    }
+
+    .menu-intro {
+        text-align: center;
+    }
+
+    .menu-foods > div {
+        display: flex;
+        flex-direction: column;
+        gap: 1.875rem;
+        align-items: center;
+        padding: 5%;
+    }
+
+    .features {
+        padding: 5%;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .features form {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .booking {
+        padding: 5%;
+    }
+
+    .booking-intro > div {
+        width: fit-content;
+    }
+
+    .booking-intro {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .booking-intro form {
+        padding: 1.25rem;
+    }
+
+    .booking-intro > div:first-child {
+        text-align: center;
+    }
+
+    .booking-intro > div:first-child p {
+        padding-right: 0;
+    }
+
+    .booking-intro h1 {
+        font-size: 2rem;
+    }
+
+    .booking-intro form p {
+        font-size: 0.8rem;
+    }
+
+    .features .label {
+        font-size: 1rem;
+    }
+
+    .footer {
+        padding: 10% 5%;
+        flex-direction: column;
+        text-align: center;
+        gap: 3.125rem;
+    }
+
+    .cta {
+        flex-direction: column;
+        text-align: center;
+        gap: 3.125rem;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .cta h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 350px) {
+    .hero {
+        padding: 5%;
+        background-image: url(../images/homepage/hero-bg-mobile.jpg);
+        background-size: cover;
+        min-height: 62.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero div {
+        padding-right: 0;
+
+    }
+
+    .benefits {
+        padding: 5%;
+        gap: 4.375rem;
+    }
+
+    .benefits article {
+        flex-direction: column;
+        gap: 1.875rem;
+    }
+
+    .benefits article > div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .enjoyable-section {
+        top: auto;
+    }
+    
+    .locally-section {
+        bottom: auto;
+    }
+
+    .benefits h2 {
+        font-size: 2rem;
+    }
+    
+    .benefits p,
+    .features p {
+        font-size: 1rem;
+    }
+
+    .menu {
+        padding: 10% 5%;
+        flex-direction: column;
+        gap: 3.125rem;
+    }
+
+    .menu h1 {
+        font-size: 2rem;
+    }
+
+    .menu-intro {
+        text-align: center;
+    }
+
+    .menu-foods > div {
+        display: flex;
+        flex-direction: column;
+        gap: 1.875rem;
+        align-items: center;
+        padding: 5%;
+    }
+
+    .features {
+        padding: 5%;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .features form {
+        justify-content: center;
+    }
+
+    .features img {
+        width: 100%;
+    }
+
+    .booking {
+        padding: 5%;
+    }
+
+    .booking-intro > div {
+        width: fit-content;
+    }
+
+    .booking-intro {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .booking-intro form {
+        padding: 1.25rem;
+    }
+
+    .booking-intro > div:first-child {
+        text-align: center;
+    }
+
+    .booking-intro > div:first-child p {
+        padding-right: 0;
+    }
+
+    .booking-intro h1 {
+        font-size: 2rem;
+    }
+
+    .booking-intro form p {
+        font-size: 0.8rem;
+    }
+
+    .features .label {
+        font-size: 1rem;
+    }
+
+    .footer {
+        padding: 10% 5%;
+        flex-direction: column;
+        text-align: center;
+        gap: 3.125rem;
+    }
+
+    .cta {
+        flex-direction: column;
+        text-align: center;
+        gap: 3.125rem;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .cta h1 {
+        font-size: 2rem;
+    }
+
+    .menu img {
+        width: 100%;
+    }
+
+    .benefits img {
+        width: 100%;
+    }
+}
