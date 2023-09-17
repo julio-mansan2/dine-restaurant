@@ -10,63 +10,60 @@ bookBtn.forEach(button => {
     })
 });
 
-const familyInput = document.querySelector('#family-gathering')
-const specialInput = document.querySelector('#special-events')
-const socialInput = document.querySelector('#social-events')
+const input = [
+    'family',
+    'events',
+    'social',
+]
 
-const familyImg = document.querySelector('.family-img')
-const eventsImg = document.querySelector('.events-img')
-const socialImg = document.querySelector('.social-img')
+const descriptions = {
+    family: ['<h2>Family Gathering</h2> <p>We love catering for entire families. So please bring everyone along for a special meal with your loved ones. We’ll provide a memorable experience for all.</p>`'],
+    events: ['<h2>Special Events</h2> <p>Whether it’s a romantic dinner or special date you’re celebrating with others we’ll look after you. We’ll be sure to mark your special date with an unforgettable meal.</p>`'],
+    social: ['<h2>Social Gathering</h2> <p>Are you looking to have a larger social event? No problem! We’re more than happy to cater for big parties. We’ll work with you to make your event a hit with everyone.</p>`'],
+}
+
 const label = document.querySelectorAll('.label')
 
-console.log(label)
+const inputsId = document.querySelectorAll('.input')
+const inputsPage = input.map((option) =>
+    document.querySelector(`#${option}-input`)
+);
 
 const description = document.querySelector('.description')
 
-familyInput.addEventListener('click', function () {
-    if (familyInput.checked) {
-        familyImg.classList.add('selecionada')
-        eventsImg.classList.remove('selecionada')
-        socialImg.classList.remove('selecionada')
-        label[0].style.color = 'var(--clr-mirage)'
-        label[1].style.color = 'var(--clr-grey)'
-        label[2].style.color = 'var(--clr-grey)'
-        description.innerHTML = `
-            <h2>Family Gathering</h2> 
-            <p>We love catering for entire families. So please bring everyone along for a special meal with your loved ones. We’ll provide a memorable experience for all.</p>`
+const inputsImages = input.map((option) =>
+    document.querySelector(`.${option}-img`)
+);
+
+function toggleDescriptions(index) {
+    description.innerHTML = descriptions[input[index]];
+}
+
+function toggleSelection(index) {
+    inputsImages.forEach((page, i) => {
+        page.classList.toggle('selecionada', i === index)
+    });
+}
+
+function toggleLabelColors (index) {
+    for (let i = 0; i < inputsId.length; i++) {
+        if (inputsId[i].checked) {
+            label[i].style.color = 'var(--clr-mirage)';
+        } else {
+            label[i].style.color = 'var(--clr-grey)';
+        }
     }
+}
 
-})
-
-specialInput.addEventListener('click', function () {
-    if (specialInput.checked) {
-        familyImg.classList.remove('selecionada')
-        eventsImg.classList.add('selecionada')
-        socialImg.classList.remove('selecionada')
-        label[0].style.color = 'var(--clr-grey)'
-        label[1].style.color = 'var(--clr-mirage)'
-        label[2].style.color = 'var(--clr-grey)'
-        description.innerHTML = `
-            <h2>Special Events</h2> 
-            <p>Whether it’s a romantic dinner or special date you’re celebrating with others we’ll look after you. We’ll be sure to mark your special date with an unforgettable meal.</p>`
-    }
-
-})
-
-socialInput.addEventListener('click', function () {
-    if (socialInput.checked) {
-        familyImg.classList.remove('selecionada')
-        eventsImg.classList.remove('selecionada')
-        socialImg.classList.add('selecionada')
-        label[0].style.color = 'var(--clr-grey)'
-        label[1].style.color = 'var(--clr-grey)'
-        label[2].style.color = 'var(--clr-mirage)'
-        description.innerHTML = `
-            <h2>Social Events</h2> 
-            <p>Are you looking to have a larger social event? No problem! We’re more than happy to cater for big parties. We’ll work with you to make your event a hit with everyone.</p>`
-    }
-
-})
+inputsPage.forEach((input, index) => {
+    input.addEventListener('click', function () {
+        if (input.checked) {
+            toggleSelection(index)
+            toggleDescriptions(index)
+            toggleLabelColors(index)
+        }
+    })
+});
 
 const minusBtn = document.querySelector('.minus')
 const plusBtn = document.querySelector('.plus')
